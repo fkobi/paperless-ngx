@@ -19,4 +19,4 @@ class PaperlessConfig(AppConfig):
 
         social_account_updated.connect(handle_social_account_updated)
 
-        AppConfig.ready(self)
+        super().ready()
