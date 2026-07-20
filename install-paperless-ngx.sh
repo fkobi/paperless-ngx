@@ -41,7 +41,7 @@ ask_docker_folder() {
 	done
 }
 
-if [[ $(id -u) == "0" ]] ; then
+if [[ "$UID" == "0" ]] ; then
 	echo "Do not run this script as root."
 	exit 1
 fi
